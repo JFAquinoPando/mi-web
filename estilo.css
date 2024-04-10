@@ -1,0 +1,43 @@
+img{
+    width: 300px;
+    transition: all 0.3s;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+body{
+    background: linear-gradient(135deg, black, crimson, darkgreen), black;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+    height: 100vh;
+}
+
+body:hover{
+    background: black;
+}
+
+div{
+    display: flex;
+}
+
+#deadpool{
+    border: none;
+    filter: drop-shadow(1px 1px 10px white);
+    animation: bailar 3s linear infinite;
+}
+
+@keyframes bailar {
+    0%, 100%{
+        transform: rotate(20deg);
+    }
+
+    50%{
+        transform: rotate(-20deg);
+    }
+}
